@@ -69,13 +69,13 @@ for WebIndex in range(1,1000,25):
             book_dict_info["Subject"]=book_dict_info["Subject"].split(",").strip()
         except:
             pass
-                # takes the table headers as keys and the Table data as values and generates the specific book information dictionary
+                # 
         books_scanned += 1 # informative purpose
         print("_--------------"+ str(books_scanned))# informative purpose
-        # ------------------Updating our book info into our page info, and them our page info to our General info of the entire web----------------------------------------------------------------------------------------
+        # ------------------Updating our book info into our general web info, ----------------------------------------------------------------------------------------
         First_1000_Books.append(book_dict_info)
 
-print
+
 #------------------------------------writes to json----------------------------------------------------------------------
 
 # with open("scrapeBook.json","w",encoding="utf-8") as saved_json:
